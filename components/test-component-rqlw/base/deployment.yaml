@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-rqlw
     spec:
       containers:
-      - image: quay.io/psturc/test-images:4d4e13711f2e4f789a75991864c73599
+      - image: quay.io/psturc/test-images@sha256:b9690e15f7d1c85ca6d584658890fe32c2d664f0ea3ec3da35f0a2a767c3425b
         name: my-python
         ports:
         - containerPort: 8081
