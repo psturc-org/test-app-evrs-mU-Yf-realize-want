@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-rqlw
+  namespace: build-e2e-ljex-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images@sha256:b9690e15f7d1c85ca6d584658890fe32c2d664f0ea3ec3da35f0a2a767c3425b
+        name: my-python
+        resources: {}
+status: {}
